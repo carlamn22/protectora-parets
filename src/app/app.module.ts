@@ -7,6 +7,7 @@ import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from 'src/pages/pages.module';
+import { SharedModule } from 'src/shared/shared.module';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { PagesModule } from 'src/pages/pages.module';
 		NbThemeModule.forRoot({ name: 'default' }),
 		NbLayoutModule,
 		NbEvaIconsModule,
-		PagesModule
+		PagesModule,
+		SharedModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
